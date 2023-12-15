@@ -17,8 +17,9 @@ decades <- unique(data$decade)
 for(decade in decades){
   # get the songs for the decade
   songs_decade <- data[data$decade == decade,]
-  # randomly select 1000 songs
-  songs_decade <- songs_decade[sample(nrow(songs_decade), 1000),]
+  # randomly select up to 10,000 songs
+  sample_size <- min(10000, nrow(songs_decade))
+  songs_decade <- songs_decade[sample(nrow(songs_decade), sample_size),]
   # add the songs to the data frame
   if (decade == decades[1]){
     data_sample <- songs_decade
@@ -35,6 +36,9 @@ genre_counts <- table(data_sample$tag)
 
 # Print the genre counts
 print(genre_counts)
+
+# print sum of genre counts
+print(sum(genre_counts))
 
 #export to csv
 write.csv(data_sample, file = "data_sample.csv")
