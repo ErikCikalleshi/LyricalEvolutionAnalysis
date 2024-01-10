@@ -1,0 +1,22 @@
+hardest_song_smog
+                artist                  title     SMOG word_counts
+1         Pedro Pietri  Puerto Rican Obituary 71.68206        1312 ####because some spanish words
+2 Deep Puddle Dynamics Deep Puddle Theme Song 69.99508        1428
+
+    artist                     title Flesch.Kincaid word_counts
+1 Draccoon       I Gave Her My Heart       855.8591        2250 ##generally a long song
+2 Lil Baby Lil Baby Discography List       574.1417        4778
+
+> easiest_song_flesch
+           artist             title Flesch.Kincaid word_counts
+1        Nonpoint         Clown Sex      -2.662833         120
+2 IFEELLIKEAMOVIE Idk im just angry      -2.360052          55 # both songs very short and have almost the same words inside
+
+                artist   title   SMOG word_counts
+1          Venus (BEL) Unknown 3.1291         108
+2 The Rational Academy  Hammer 3.1291          41 # also short songs with repeated words inside 
+
+shortest_song
+       artist               title word_counts
+1 Dark Castle        Growing Slow          16 # no repatative therefore less easy to read
+2 Morta Skuld Consuming Existence          16 
